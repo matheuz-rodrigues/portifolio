@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -11,50 +11,75 @@
     <link href="../dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-[#0B0B0B] text-white">
     <div class="max-w-[70%] mx-auto">
-        <header class="flex justify-between items-center p-4 bg-black/80 text-white shadow-md backdrop-blur">
-
-            <h1 style="font-family: McLaren;" class="text-2xl">
-                <a class="text-purple-400" href="">Matheus Rodrigues</a>
-            </h1>
-
-            <ul class="flex gap-6 mt-1">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre Mim</a></li>
-                <li><a href="">Experiências</a></li>
-                <li><a href="">Projetos</a></li>
-            </ul>
+        <header class="fixed top-0 left-0 right-0 bg-[#0B0B0B]/80 text-white shadow-md backdrop-blur w-full z-50">
+            <div class="flex justify-between items-center p-4 max-w-7xl mx-auto w-full">
+                <h1 style="font-family: McLaren;" class="text-2xl">
+                    <a class="text-purple-400" href="#inicio">Matheus Rodrigues</a>
+                </h1> 
+        
+                <ul class="flex gap-6 mt-1">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </div>
         </header>
 
-        <hr class="opacity-25">
-
-        <section class="grid grid-cols-2 mt-8 px-10">
-            <div class="flex flex-col justify-center text-3xl text-left">
+        <section id="inicio" class="grid grid-cols-2 mt-20 pb-30 px-10">
+            <div class="flex flex-col justify-center text-left">
                 <h2 class="text-2xl mb-3">Olá, eu sou</h2>
-                <h1 style="font-family: McLaren;" class="text-purple-400 text-3xl">Matheus Rodrigues,</h1>
+                <h1 style="font-family: McLaren;" class="text-purple-400 text-3xl    ">Matheus Rodrigues,</h1>
                 <h2 class="text-2xl mt-3">Software engineer</h2>
 
-                <div class="flex gap-4 mt-5 text-2xl">
+                <div class="flex gap-4 mt-5">
                     <button
-                        class="w-auto h-auto px-5 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded-xs flex items-center justify-center shadow-md transition duration-300 text-xl">
-                        Linkedin
+                        class="cursor-pointer w-auto h-auto px-8 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded-xs flex items-center justify-center shadow-md transition duration-300 text-md">
+                        <a target="_blank" href="https://www.linkedin.com/in/matheus-rodrigues-476708333/">Linkedin</a>
                     </button>
                     <button
-                        class="w-auto h-auto px-5 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded-xs flex items-center justify-center shadow-md transition duration-300 text-xl">
-                        Git Hub
+                        class="cursor-pointer w-auto h-auto px-8 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded-xs flex items-center justify-center shadow-md transition duration-300 text-md">
+                        <a target="_blank" href="https://github.com/matheuz-rodrigues">Git Hub</a>
                     </button>
                 </div>
             </div>
-            
+
             <div class="relative flex justify-center items-center">
-            
-                <div class="absolute w-72 h-72 rounded-full z-0 blur-3xl opacity-40" style="background: radial-gradient(circle, white, transparent);"></div>
+
+                <div class="absolute w-72 h-72 rounded-full z-0 blur-3xl opacity-40"
+                    style="background: radial-gradient(circle, white, transparent);"></div>
                 <img class="h-70 relative z-10" src="img/imgcentral.png" alt="">
             </div>
-         
+        </section>
+
+        <section id="sobre" class="bg-[#0E0E0E] text-white mt-8 px-10 py-15">
+            <h1 style="font-family: McLaren;" class="text-purple-400 text-3xl">Sobre mim</h1>
+            <p class="my-5 ">
+                Meu nome é Matheus, sou Engenheiro de Software. Especializo-me
+                em áreas como Machine Learning, Análise de Dados e Automação, além de possuir sólida experiência em
+                Programação Orientada a Objetos (POO). Tenho um forte foco em desenvolver soluções eficientes,
+                utilizando as tecnologias mais avançadas para otimizar processos e transformar dados em insights
+                valiosos.
+                Atualmente, trabalho como freelancer, criando soluções personalizadas que atendem às necessidades
+                específicas dos meus clientes, sempre com um compromisso com a qualidade e a inovação.
+            </p>
+            <ul class=" my-10 flex gap-17 ">
+                <li><img class="h-10" src="img/javaLogo.png" alt=""></li>
+                <li><img class="h-10" src="img/pythonLogo.png" alt=""></li>
+                <li><img class="h-10" src="img/sqlLogo.png" alt=""></li>
+            </ul>
+            <button
+                class="cursor-pointer w-auto h-auto px-8 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded-xs flex items-center justify-center shadow-md transition duration-300 text-md">
+                <a href="curriculo.pdf" download="curriculo.pdf">Baixar Currículo</a>
+            </button>
+
         </section>
     </div>
+    <footer class="bg-[#0B0B0B] p-5 flex justify-center">
+        &copy;2025 - José Matheus Rodrigues dos Santos Filho
+    </footer>
 </body>
 
 
