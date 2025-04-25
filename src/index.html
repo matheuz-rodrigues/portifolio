@@ -16,13 +16,13 @@
         <header class="fixed top-0 left-0 right-0 bg-[#0B0B0B]/80 text-white shadow-md backdrop-blur w-full z-50">
             <div class="flex justify-between items-center p-4 max-w-7xl mx-auto w-full">
                 <h1 style="font-family: McLaren;" class="text-2xl">
-                    <a class="text-purple-400" href="#inicio">Matheus Rodrigues</a>
-                </h1> 
-        
+                    <a class="text-purple-400" href="#">Matheus Rodrigues</a>
+                </h1>
+
                 <ul class="flex gap-6 mt-1">
                     <li><a href="#">Início</a></li>
                     <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#experiencias">Experiências</a></li>
+                    <!-- <li><a href="#experiencias">Experiências</a></li> -->
                     <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </div>
@@ -66,9 +66,51 @@
                 específicas dos meus clientes, sempre com um compromisso com a qualidade e a inovação.
             </p>
             <ul class=" my-10 flex gap-17 ">
-                <li><img class="h-10" src="img/javaLogo.png" alt=""></li>
-                <li><img class="h-10" src="img/pythonLogo.png" alt=""></li>
-                <li><img class="h-10" src="img/sqlLogo.png" alt=""></li>
+                <li class="group" style="perspective: 800px;">
+                    <div
+                        class="relative w-15 h-15 overflow-hidden rounded-lg transition-transform duration-500 transform-gpu group-hover:scale-110 group-hover:rotate-3xl">
+                        <img src="img/javaLogo.png" alt="Java"
+                            class="w-full h-full object-contain transition-filter duration-500 filter group-hover:brightness-110 group-hover:drop-shadow-xl" />
+
+                        <div
+                            class="absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-purple-400 transition-colors duration-500">
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                    </div>
+                </li>
+                <li class="group" style="perspective: 800px;">
+                    <div
+                        class="relative w-15 h-15 overflow-hidden rounded-lg transition-transform duration-500 transform-gpu group-hover:scale-110 group-hover:rotate-3xl">
+                        <img src="img/pythonLogo.png" alt="Java"
+                            class="w-full h-full object-contain transition-filter duration-500 filter group-hover:brightness-110 group-hover:drop-shadow-xl" />
+
+                        <div
+                            class="absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-purple-400 transition-colors duration-500">
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                    </div>
+                </li>
+                <li class="group" style="perspective: 800px;">
+                    <div
+                        class="relative w-15 h-15 overflow-hidden rounded-lg transition-transform duration-500 transform-gpu group-hover:scale-110 group-hover:rotate-3xl">
+                        <img src="img/sqlLogo.png" alt="Java"
+                            class="w-full h-full object-contain transition-filter duration-500 filter group-hover:brightness-110 group-hover:drop-shadow-xl" />
+
+                        <div
+                            class=" absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-purple-400 transition-colors duration-500">
+                        </div>
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                    </div>
+                </li>
             </ul>
             <button
                 class="cursor-pointer w-auto h-auto px-8 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded-xs flex items-center justify-center shadow-md transition duration-300 text-md">
@@ -76,11 +118,138 @@
             </button>
 
         </section>
+
+        <div id="projetos" class="mt-8 px-10 pt-15">
+            <h1 style="font-family: McLaren;" class="text-purple-400 text-3xl">Projetos</h1>
+        </div>
+        <section  class="flex flex-wrap justify-center gap-6 container mx-auto py-8">
+
+            <div class="max-w-md w-full bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden">
+
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 w-1 bg-purple-400"></div>
+                    <img src="img/projetoimg.jpg" alt="Imagem do Projeto" class="w-full h-48 object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Nome do Projeto</h3>
+                    <p class="text-gray-300 mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        blandit interdum odio eu varius.
+                    </p>
+                    <p class="text-purple-400 mb-6">Tecnologias usadas no projeto</p>
+                    <div class="flex gap-4 flex-col sm:flex-row">
+                        <div class="flex-1">
+                            <button data-url="https://seuprojeto.com"
+                                class="cursor-pointer w-full px-4 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded transition">
+                                Acessar o projeto
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <button data-url="https://github.com/seuusuario/repositorio"
+                                class="cursor-pointer w-full px-4 py-2 border border-purple-400 hover:bg-purple-600 hover:text-black text-purple-400 font-semibold rounded transition">
+                                Acessar repositório
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-md w-full bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden">
+
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 w-1 bg-purple-400"></div>
+                    <img src="img/projetoimg.jpg" alt="Imagem do Projeto" class="w-full h-48 object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Nome do Projeto</h3>
+                    <p class="text-gray-300 mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        blandit interdum odio eu varius.
+                    </p>
+                    <p class="text-purple-400 mb-6">Tecnologias usadas no projeto</p>
+                    <div class="flex gap-4 flex-col sm:flex-row">
+                        <div class="flex-1">
+                            <button data-url="https://seuprojeto.com"
+                                class="cursor-pointer w-full px-4 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded transition">
+                                Acessar o projeto
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <button data-url="https://github.com/seuusuario/repositorio"
+                                class="cursor-pointer w-full px-4 py-2 border border-purple-400 hover:bg-purple-600 hover:text-black text-purple-400 font-semibold rounded transition">
+                                Acessar repositório
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-md w-full bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden">
+
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 w-1 bg-purple-400"></div>
+                    <img src="img/projetoimg.jpg" alt="Imagem do Projeto" class="w-full h-48 object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Nome do Projeto</h3>
+                    <p class="text-gray-300 mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        blandit interdum odio eu varius.
+                    </p>
+                    <p class="text-purple-400 mb-6">Tecnologias usadas no projeto</p>
+                    <div class="flex gap-4 flex-col sm:flex-row">
+                        <div class="flex-1">
+                            <button data-url="https://seuprojeto.com"
+                                class="cursor-pointer w-full px-4 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded transition">
+                                Acessar o projeto
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <button data-url="https://github.com/seuusuario/repositorio"
+                                class="cursor-pointer w-full px-4 py-2 border border-purple-400 hover:bg-purple-600 hover:text-black text-purple-400 font-semibold rounded transition">
+                                Acessar repositório
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-md w-full bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden">
+
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 w-1 bg-purple-400"></div>
+                    <img src="img/projetoimg.jpg" alt="Imagem do Projeto" class="w-full h-48 object-cover" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Nome do Projeto</h3>
+                    <p class="text-gray-300 mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        blandit interdum odio eu varius.
+                    </p>
+                    <p class="text-purple-400 mb-6">Tecnologias usadas no projeto</p>
+                    <div class="flex gap-4 flex-col sm:flex-row">
+                        <div class="flex-1">
+                            <button data-url="https://seuprojeto.com"
+                                class="cursor-pointer w-full px-4 py-2 bg-purple-400 hover:bg-purple-600 text-black font-semibold rounded transition">
+                                Acessar o projeto
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <button data-url="https://github.com/seuusuario/repositorio"
+                                class="cursor-pointer w-full px-4 py-2 border border-purple-400 hover:bg-purple-600 hover:text-black text-purple-400 font-semibold rounded transition">
+                                Acessar repositório
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </div>
     <footer class="bg-[#0B0B0B] p-5 flex justify-center">
         &copy;2025 - José Matheus Rodrigues dos Santos Filho
     </footer>
 </body>
-
 
 </html>
